@@ -1,0 +1,76 @@
+*, *::after, *::before { box-sizing: border-box; }
+
+body{margin: 0; padding: 0;}
+
+a { text-decoration: none; color: inherit; }
+
+li { list-style: none; }
+
+body { background: #0E0211; }
+
+span { display: flex; justify-content: center; color: #FFF; font-family: "Baloo 2"; font-size: 18px; font-style: normal; line-height: 24px; font-weight: 700; margin-top: 30px; }
+
+.error { color: red; }
+
+.container { margin: 0 auto; padding: 0 10px; max-width: 1920px; width: 100%; }
+
+header { max-width: 1920px; width: 100%; height: 100vh; background-image: url('../image/header-bg.png'); background-size: cover; background-repeat: no-repeat; background-position: top top;}
+.header__inner { height: 100vh; display: flex; flex-wrap: wrap; justify-content: space-between; flex-direction: column; }
+.header__inner-title h1{ color: #FFF; font-family: 'Russo One'; font-size: 96px; font-style: normal; font-weight: 400; line-height: 90px; letter-spacing: 1.92px; max-width: 1670px; margin: 0 auto; padding-bottom: 149px; }
+
+.menu { margin: 0 auto; padding-top: 30px; max-width: 612px; }
+.menu__list { display: flex; gap: 93px; }
+.menu__item { color: #FFF; font-family: "Baloo 2"; font-size: 18px; font-style: normal; font-weight: 700; line-height: 24px; }
+
+.services { position: relative; height: 100vh; padding: 220px; }
+.services__inner { display: flex; justify-content: space-between; max-width: 1424px; }
+.services__card { display: flex; width: 224px; flex-direction: column; align-items: center; flex-wrap: wrap; gap: 22px; z-index: 1; }
+.services__card-info { display: none; color: #FFF; text-align: center; font-family: 'Baloo 2'; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; }
+.services__card-btn { display: flex; justify-content: space-between; gap: 10px; }
+.services__card-button { display: flex; padding: 4px 8px; justify-content: center; align-items: center; border-radius: 8px; border: 1px solid #7F0781; background: transparent; color: #FFF; font-family: 'Baloo 2'; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; }
+.services__card-button:hover { background: #7F0781; box-shadow: 0px 0px 4px 0px #FDBEFF; }
+.services__card-input { display: flex; width: 224px; height: 32px; padding: 4px 8px; justify-content: center; align-items: center; gap: 10px; border-radius: 8px; background: #7F0781; box-shadow: 0px 0px 4px 0px #FDBEFF; border: none; }
+.services__card-input::placeholder { text-align: center; color: #FFF; }
+.services__card-done { width: 224px; border: none; padding: 8px; border-radius: 8px; background: #FFF; color: #0E0211; font-family: 'Baloo 2'; font-size: 20px; font-style: normal; font-weight: 400; line-height: 24px; }
+
+.active { background: #7F0781; box-shadow: 0px 0px 4px 0px #FDBEFF; }
+
+.show { display: block; }
+
+.bg_services { position: absolute; top: 550px; left: -100px; width: 1900px; height: 1295.44px; fill: linear-gradient(90deg, #EE69FA 46.15%); filter: blur(218px); }
+
+.garant { max-width: 1920px; height: 400px; background-image: url('../image/garant-bg.png'); }
+.garant__inner { position: relative; display: flex; align-items: center; }
+.garant__inner-title { display: inline-block; width: 320px; transform: rotate(-90deg); color: #FFF; text-align: center; font-family: 'Days One'; font-size: 48px; font-style: normal; font-weight: 400; line-height: 168px; margin-left: 28%; margin-top: 115px; }
+.garant__inner-img { position: absolute; top: 0; left: 0; }
+.garant__inner-info { text-align: center; display: flex; flex-wrap: wrap; flex-direction: column; margin-top: 85px; }
+.garant__inner-info__title { color: #FFF; font-family: 'Baloo 2'; font-size: 32px; font-style: normal; font-weight: 400; line-height: 40px; margin-bottom: 45px; }
+.garant__inner-info__subtitle { color: #FFF; font-family: 'Baloo 2'; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; }
+
+.feedback { margin: 275px 80px 0; height: 75vh; }
+.feedback__inner { display: flex; justify-content: space-between; }
+.feedback__card { display: flex; flex-wrap: wrap; color: #fff; width: 225px; }
+.feedback__card-user { display: flex; gap: 16px; }
+.feedback__card-user__img { width: 104px; height: 104px; }
+.feedback__card-user__info h2 { display: flex; margin-bottom: 8px; text-align: center; font-family: 'Baloo 2'; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; }
+.feedback__card-user__info h2 p { margin-left: 8px; text-align: center; font-family: 'Baloo 2'; font-size: 14px; font-style: normal; font-weight: 400; line-height: 24px; }
+.feedback__card-user__rating { margin-bottom: 8px; }
+.feedback__card-user-text { font-family: 'Baloo 2'; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; }
+.feedback__card-user-text p { margin-bottom: 8px; }
+.feedback__card-user-text p img { margin-left: 8px; }
+.feedback__card-text { display: flex; margin-top: 12px; align-self: stretch; font-family: 'Baloo 2'; font-size: 16px; font-style: normal; font-weight: 400; line-height: 24px; }
+
+.footer { color: #fff; position: relative; }
+.footer__inner { display: flex; justify-content: space-evenly; margin: 0 auto; }
+.footer__inner-title { text-align: center; font-family: 'Days One'; font-size: 32px; font-style: normal; font-weight: 400; line-height: 40px; margin-bottom: 22px; }
+.footer__inner h4 { font-family: 'Baloo 2'; font-size: 24px; font-style: normal; font-weight: 700; line-height: 24px; }
+.footer p { text-align: center; font-family: 'Baloo 2'; font-size: 40px; font-style: normal; font-weight: 400; line-height: 24px; }
+.footer__img { position: absolute; right: 0; bottom: 0; }
+
+.email { text-align: center; font-family: Baloo 2; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; position: relative; }
+.email::before { content: url(../image/email.svg); position: absolute; left: -32px; top: -5px; }
+
+.tel { display: flex; flex-direction: column; text-align: center; font-family: 'Baloo 2'; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; position: relative; }
+.tel::before { content: url(../image/tel.svg); position: absolute; top: 8px; left: -32px; }
+
+/*# sourceMappingURL=style.css.map */
